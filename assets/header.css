@@ -101,7 +101,7 @@ header .content .bt-xemthem {
     padding-top: 10px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   header .content {
     width: 400px;
   }
