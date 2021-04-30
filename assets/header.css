@@ -1,0 +1,152 @@
+header {
+  background-image: url("../img/bg-landingpage.png");
+  background-size: 100% 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 730px;
+}
+header .content {
+  width: 1140px;
+  height: 750px;
+  padding: 5px 0px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+header .content .bt-xemthem {
+
+  position: absolute;
+
+  bottom: 0;
+}
+.content .layer {
+  display: flex;
+  justify-content: space-between;
+}
+.content .layer .layer-sub-1 {
+  flex-basis: 45%;
+  position: relative;
+}
+.content .layer .layer-sub-1 .fix-clear {
+  padding-top: 120px;
+}
+.content .layer .layer-sub-1 .ipad {
+  /* position: absolute; */
+  /* bottom: 0; */
+}
+.content .layer .layer-sub-1 .iphone {
+  position: absolute;
+  top: 200px;
+  right: -55px;
+  /* bottom: 0; */
+}
+.content .layer .layer-sub-2 {
+  flex-basis: 44%;
+  padding: 30px 0px 0px 20px;
+  text-align: left;
+}
+.layer .layer-sub-2 p {
+  color: #087b44;
+  font-weight: 600;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  /* width: 500px; */
+  line-height: 1.4;
+}
+.layer .layer-sub-2 .downloads {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.layer .layer-sub-2 .downloads .download-item {
+  flex-basis: 30%;
+}
+.layer .layer-sub-2 .downloads .download-item img {
+  width: 142px;
+  height: 44px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header .content {
+    width: 690px;
+    height: 840px;
+  }
+  .layer {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .content .layer .layer-sub-1 {
+    flex-basis: 100%;
+    position: static;
+    display: flex;
+    align-items: center;
+  }
+  .content .layer .layer-sub-1 .iphone {
+    width: 120px;
+    position: static;
+    margin-left: 50px;
+    /* align-items: center; */
+    /* position: absolute;
+    right: 0;
+    bottom: 300px; */
+  }
+  .content .layer .layer-sub-1 .ipad {
+    left: 0;
+  }
+  .content .layer .layer-sub-2 {
+    flex-basis: 100%;
+    padding: 30px 0px;
+  }
+  .content .layer .layer-sub-1 .fix-clear {
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .content {
+    width: 400px;
+  }
+  .layer {
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .content .layer .layer-sub-1 {
+    flex-basis: 100%;
+  }
+  .content .layer .layer-sub-1 .iphone {
+    width: 120px;
+    position: absolute;
+    right: 10px;
+    top:40px;
+  }
+  .content .layer .layer-sub-1 .ipad {
+    width: 334px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .content .layer .layer-sub-2 {
+    flex-basis: 100%;
+    padding: 30px 0px;
+
+  }
+  .content .layer .layer-sub-1 .fix-clear {
+    padding-top: 10px;
+  }
+
+  .layer .layer-sub-2 .downloads {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+  }
+  .layer .layer-sub-2>img{
+    width: 354px;
+  }
+  header .content .bt-xemthem {
+    display: none;
+  }
+
+  .content .layer .layer-sub-2 {
+    text-align: center;
+  }
+}
